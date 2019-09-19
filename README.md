@@ -1,11 +1,21 @@
-This repository is for navigation paper shooting for IROS 2019
+This repository is the ros package for 
 
-Deadlines:
+"Localization Algorithm Design and Evaluationfor an Autonomous Pollination Robot"
 
-Nov. 16th ---> Each component finished
+pblished in ION GNSS+ 2019
 
-Dec. 14th ---> Integration
 
-Jan. 14th ---> Finish tests
+Run it:
 
-Feb. 1st --> First draft of paper
+roslaunch aloam_velodyne aloam_velodyne_HDL_32.launch
+
+roslaunch nav_filter test_online.launch
+
+roslaunch gicp_localization test_online.launch
+
+rosbag play --pause --clock file.bag
+
+Result:
+<!-- <img src="https://github.com/" width = 55% height = 55%/> -->
+
+Thanks for LOAM(J. Zhang and S. Singh. LOAM: Lidar Odometry and Mapping in Real-time) and [Advanced implementation of LOAM](https://github.com/HKUST-Aerial-Robotics/A-LOAM).
